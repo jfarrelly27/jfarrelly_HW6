@@ -1,74 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4; /* Light grey background for the whole page */
-    color: #333; /* Dark grey text for readability on light background */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
     margin: 0;
     padding: 0;
 }
 
 header, nav, main, footer {
-    max-width: 960px; /* Max width for content */
-    margin: 0 auto; /* Center content */
-    padding: 20px; /* Padding around content */
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
-    background-color: #333; /* Dark background for the header */
-    color: white; /* White text color */
-    text-align: left; /* Left-align the text for a change from too centered */
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
 }
 
-footer {
-    background-color: #333; /* Dark background for the footer */
-    color: white; /* White text color */
-    text-align: center; /* Center-align the text */
-    padding: 10px 0; /* Padding above and below the content */
+header h1 {
+    margin: 0;
+    font-family: 'Merriweather', serif;
 }
 
 nav ul {
-    list-style-type: none; /* Remove default list styling */
-    padding: 0; /* Remove default padding */
-    text-align: left; /* Left-align the list items for a change from too centered */
-    margin: 0; /* Remove default margin */
-    background-color: #f8f9fa; /* Light background for better visibility */
-    padding: 10px 0; /* Padding for the nav */
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
 }
 
 nav ul li {
-    display: inline; /* Display list items inline */
-    margin-right: 20px; /* Space to the right of list items */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove default text decoration */
-    color: #333; /* Dark text for contrast against light nav background */
-    font-weight: bold; /* Bold font */
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
 }
 
-a:hover, a:active {
-    color: #007bff; /* Bright blue for hover/active state for better visibility */
+nav ul li a.active, nav ul li a:hover {
+    color: #ffc107;
 }
 
 .profile-pic, .family-pic {
-    display: block; /* Ensure images are block level for margin auto */
-    max-width: 100%; /* Max width to fit container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 20px auto; /* Center images */
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
 }
 
-.profile-pic {
-    max-width: 300px; /* Specific max width for profile picture */
+main {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
 }
 
-.family-pic {
-    max-width: 400px; /* Specific max width for family picture */
-    margin-bottom: 20px; /* Add some space below the family picture */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 footer a {
-    color: #ffffff; /* Ensure footer links are white for visibility */
+    color: #ffc107;
 }
 
 footer a:hover {
-    color: #ffdddd; /* Lighter pinkish shade for hover */
+    color: #fff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    text-align: left;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    header, nav, main, footer {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
 }
