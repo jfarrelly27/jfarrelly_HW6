@@ -4,9 +4,6 @@ body {
     color: #333; /* Dark grey text for readability on light background */
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 header, nav, main, footer {
@@ -18,36 +15,38 @@ header, nav, main, footer {
 header {
     background-color: #333; /* Dark background for the header */
     color: white; /* White text color */
-    text-align: center; /* Center-align the text */
+    text-align: left; /* Left-align the text for a change from too centered */
 }
 
 footer {
     background-color: #333; /* Dark background for the footer */
     color: white; /* White text color */
     text-align: center; /* Center-align the text */
-    margin-top: auto; /* Push footer to the bottom */
+    padding: 10px 0; /* Padding above and below the content */
 }
 
 nav ul {
     list-style-type: none; /* Remove default list styling */
     padding: 0; /* Remove default padding */
-    text-align: center; /* Center-align list items */
+    text-align: left; /* Left-align the list items for a change from too centered */
     margin: 0; /* Remove default margin */
+    background-color: #f8f9fa; /* Light background for better visibility */
+    padding: 10px 0; /* Padding for the nav */
 }
 
 nav ul li {
     display: inline; /* Display list items inline */
-    margin: 0 10px; /* Space around list items */
+    margin-right: 20px; /* Space to the right of list items */
 }
 
 nav ul li a {
     text-decoration: none; /* Remove default text decoration */
-    color: white; /* White text color for contrast */
+    color: #333; /* Dark text for contrast against light nav background */
     font-weight: bold; /* Bold font */
 }
 
 a:hover, a:active {
-    color: #ddd; /* Lighter shade for hover/active state */
+    color: #007bff; /* Bright blue for hover/active state for better visibility */
 }
 
 .profile-pic, .family-pic {
@@ -63,4 +62,13 @@ a:hover, a:active {
 
 .family-pic {
     max-width: 400px; /* Specific max width for family picture */
+    margin-bottom: 20px; /* Add some space below the family picture */
+}
+
+footer a {
+    color: #ffffff; /* Ensure footer links are white for visibility */
+}
+
+footer a:hover {
+    color: #ffdddd; /* Lighter pinkish shade for hover */
 }
