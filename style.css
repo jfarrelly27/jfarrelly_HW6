@@ -1,10 +1,58 @@
-body { font-family: Arial, sans-serif; }
-header, footer { background-color: #333; color: white; padding: 10px; }
-nav ul { list-style-type: none; }
-nav ul li { display: inline; margin-right: 10px; }
-.family-pic {
-    width: 100%; /* Adjusts the width to fit the container */
-    max-width: 400px; /* Maximum width */
-    height: auto; /* Maintains the aspect ratio */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    color: #333; /* Dark grey text color for better readability */
+    margin: 0;
+    padding: 0;
 }
 
+header {
+    background-color: #333; /* Dark background for the header */
+    color: white; /* White text color */
+    padding: 20px 10px; /* Padding around the content */
+    text-align: center; /* Center-align the text */
+}
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 10px 0; /* Padding above and below the content */
+    text-align: center; /* Center-align the text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none; /* Remove the default list styling */
+    padding: 0; /* Remove the default padding */
+    text-align: center; /* Center-align the list items */
+}
+
+nav ul li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Add some space between the list items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove the default text decoration */
+    color: white; /* White text color */
+    font-weight: bold; /* Make the font bold */
+}
+
+a:hover {
+    color: #ddd; /* Lighter shade when hovering */
+}
+
+.profile-pic, .family-pic {
+    max-width: 100%; /* Max width to fit the container */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.profile-pic {
+    max-width: 300px; /* Specific max width for the profile picture */
+}
+
+.family-pic {
+    max-width: 400px; /* Specific max width for the family picture */
+}
