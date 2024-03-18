@@ -1,58 +1,66 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4; /* Light grey background for the whole page */
-    color: #333; /* Dark grey text color for better readability */
+    color: #333; /* Dark grey text for readability on light background */
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, nav, main, footer {
+    max-width: 960px; /* Max width for content */
+    margin: 0 auto; /* Center content */
+    padding: 20px; /* Padding around content */
 }
 
 header {
     background-color: #333; /* Dark background for the header */
     color: white; /* White text color */
-    padding: 20px 10px; /* Padding around the content */
     text-align: center; /* Center-align the text */
 }
 
 footer {
     background-color: #333; /* Dark background for the footer */
     color: white; /* White text color */
-    padding: 10px 0; /* Padding above and below the content */
     text-align: center; /* Center-align the text */
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 nav ul {
-    list-style-type: none; /* Remove the default list styling */
-    padding: 0; /* Remove the default padding */
-    text-align: center; /* Center-align the list items */
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align list items */
+    margin: 0; /* Remove default margin */
 }
 
 nav ul li {
     display: inline; /* Display list items inline */
-    margin-right: 20px; /* Add some space between the list items */
+    margin: 0 10px; /* Space around list items */
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove the default text decoration */
-    color: white; /* White text color */
-    font-weight: bold; /* Make the font bold */
+    text-decoration: none; /* Remove default text decoration */
+    color: white; /* White text color for contrast */
+    font-weight: bold; /* Bold font */
 }
 
-a:hover {
-    color: #ddd; /* Lighter shade when hovering */
+a:hover, a:active {
+    color: #ddd; /* Lighter shade for hover/active state */
 }
 
 .profile-pic, .family-pic {
-    max-width: 100%; /* Max width to fit the container */
-    height: auto; /* Keep the aspect ratio */
+    display: block; /* Ensure images are block level for margin auto */
+    max-width: 100%; /* Max width to fit container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Center images */
 }
 
 .profile-pic {
-    max-width: 300px; /* Specific max width for the profile picture */
+    max-width: 300px; /* Specific max width for profile picture */
 }
 
 .family-pic {
-    max-width: 400px; /* Specific max width for the family picture */
+    max-width: 400px; /* Specific max width for family picture */
 }
