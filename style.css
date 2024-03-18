@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header, main, footer {
+    max-width: 960px;
+    margin: 20px auto; /* Consistent outer margin */
+    padding: 20px;
+    background-color: #fff; /* Example background color, adjust as needed */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds depth */
+    border-radius: 8px; /* Optional: softens the edges */
+}
+
+header {
+    background-color: #007bff; /* Specific background color for header */
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Ensure nav aligns properly within header */
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #ffc107;
+}
+
+.profile-pic, .family-pic {
+    width: 100%;
+    max-width: 400px; /* Adjusted for the profile pic */
+    height: auto; /* Maintains aspect ratio */
+    margin: 20px auto; /* Centers the image */
+    display: block;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px auto;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ffffff;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+}
+
+footer a {
+    color: #ffc107;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px;
+        margin: 10px auto; /* Adjusted for consistent responsive margins */
+    }
+    
+    .profile-pic, .family-pic {
+        max-width: 100%; /* Allows images to scale down on smaller screens */
+    }
+}
+
+ul {
+    list-style-type: none; /* Removes the default list bullet */
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0; /* Adds some vertical padding for list items */
+}
+
+ul li a {
+    color: #007bff; /* Sets the link color */
+    text-decoration: none; /* Removes the underline from links */
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Adds underline on hover for better link visibility */
+}
